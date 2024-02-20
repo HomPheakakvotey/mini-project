@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdn tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+  </head>
+
+  <body class="bg-[#FBFFEA]">
+
+    <!-- Navbar -->
+    <nav
+        class="bg-[#FBFFEA] dark:bg-gray-900 fixed w-full z-20 top-0 start-0 h-20 "
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="../img/logo.png"
+              class="h-[45px]"
+              alt="Flowbite Logo"
+            />
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-[#FBFFEA] bg-[#2F5339] hover:bg-gray-700 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700  w-[120px] h-[45px]"
+            >
+              Start Now
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#FBFFEA]0 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-bold border border-bg-[#FBFFEA] rounded-lg bg-[#FBFFEA] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-[#FBFFEA] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 text-lg"
+            >
+              <li>
+                <a
+                  href="../index.html"
+                  class="block py-2 px-3 text-[#2F5339] bg-[#FBFFEA] rounded md:bg-transparent md:text-[#2F5339] md:p-0 md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="block py-2 px-3 text-[#2F5339] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-700 md:p-0 md:dark:hover:text-[#FBFFEA]0 dark:text-[#FBFFEA] dark:hover:bg-gray-700 dark:hover:text-[#FBFFEA] md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="block py-2 px-3 text-[#2F5339] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-700 md:p-0 md:dark:hover:text-[#FBFFEA]0 dark:text-[#FBFFEA] dark:hover:bg-gray-700 dark:hover:text-[#FBFFEA] md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="signup.html"
+                  class="block py-2 px-3 text-[#2F5339] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-700 md:p-0 md:dark:hover:text-[#FBFFEA]0 dark:text-[#FBFFEA] dark:hover:bg-gray-700 dark:hover:text-[#FBFFEA] md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- End Navbar -->
+
+    <!-- Main -->
+    <main class="w-full mt-16 p-4 z-10">
+
+      <!-- Hero Section -->
+      <div class="grid max-w-screen-xl p-4 mx-auto lg:gap-8 xl:gap-0 lg:py-5 lg:grid-cols-12  ">
+          <div class="place-self-center lg:col-span-6 z-10">
+              <h1 class="max-w-2xl md:mb-16 text-4xl font-bold  md:text-[60px] xl:text-[60px] dark:text-white text-[#2F5339]">About Us</h1>
+              <p class="max-w-2xl mb-6  text-gray-500 lg:mb-8 md:text-[20px] lg:text-xl dark:text-gray-200  text-gray-100">Paper is a platform that allows publishers, bloggers and website owners to earn money by placing content. It is a trustworthy and credible platform that allows you to sell guest posts and sponsored content in a legitimate way. Website owners can add their websites on the platform and get paid for publishing content. Blog Management helps website owners monetize their blogs and websites by opening up a steady revenue stream.
+              </p>
+          </div>
+          <div class="hidden  lg:col-span-4 lg:flex z-10 lg:w-[600px] lg:ml-32">
+          <img src="/img/about.png" alt="mockup">
+          </div>                
+      </div> 
+      <!-- Hero Section End -->
+  
+      <!-- About -->
+      <section class=" dark:bg-gray-900 relative">
+          <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+              <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16 z-20">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-blue-500">
+                  <span class="mb-4 text-4xl md:text-[35px] tracking-tight font-bold text-center text-[#2F5339]">Our Team</h2>
+              </div> 
+              <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+                  <div class="items-center bg-[#FBFFEA] sm:flex mb-10 dark:bg-gray-800 dark:border-gray-700">
+                      <a href="#">
+                          <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar">
+                      </a>
+                      <div class="p-5">
+                          <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                              <a href="#">Bonnie Green</a>
+                          </h3>
+                          <span class="text-gray-500 dark:text-gray-400">CEO & Web Developer</span>
+                          <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Bonnie drives the technical strategy of the flowbite platform and brand.</p>
+                          <ul class="flex space-x-4 sm:mt-0">
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div> 
+                  <div class="items-center bg-[#FBFFEA]  sm:flex mb-10 dark:bg-gray-800 dark:border-gray-700">
+                      <a href="#">
+                          <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Avatar">
+                      </a>
+                      <div class="p-5">
+                          <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                              <a href="#">Jese Leos</a>
+                          </h3>
+                          <span class="text-gray-500 dark:text-gray-400">CTO</span>
+                          <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Jese drives the technical strategy of the flowbite platform and brand.</p>
+                          <ul class="flex space-x-4 sm:mt-0">
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div> 
+                  <div class="items-center bg-[#FBFFEA] sm:flex dark:bg-gray-800 dark:border-gray-700">
+                      <a href="#">
+                          <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar">
+                      </a>
+                      <div class="p-5">
+                          <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                              <a href="#">Michael Gough</a>
+                          </h3>
+                          <span class="text-gray-500 dark:text-gray-400">Senior Front-end Developer</span>
+                          <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Michael drives the technical strategy of the flowbite platform and brand.</p>
+                          <ul class="flex space-x-4 sm:mt-0">
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div> 
+                  <div class="items-center bg-[#FBFFEA]  sm:flex dark:bg-gray-800 dark:border-gray-700">
+                      <a href="#">
+                          <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png" alt="Sofia Avatar">
+                      </a>
+                      <div class="p-5">
+                          <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                              <a href="#">Lana Byrd</a>
+                          </h3>
+                          <span class="text-gray-500 dark:text-gray-400">Marketing & Sale</span>
+                          <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Lana drives the technical strategy of the flowbite platform and brand.</p>
+                          <ul class="flex space-x-4 sm:mt-0">
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>  
+              </div>  
+          </div>
+        </section>
+      </main>
+
+    <!-- Footer -->
+    <Footer class="bg-[#2F5339] w-full h-full">
+      <section class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-[20px] xl:p-0">
+          <div>
+              <img src="/img/logo.png" alt="logo" class="w-48 mt-[35%]">
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 md:gap-4 mt-20">
+          <div class="">
+            <h2
+              class="mb-4 text-xl font-semibold text-white">
+              About
+            </h2>
+            <ul
+              class="text-white  font-inter text-md">
+              <li class="mb-4">
+                <a href="#"
+                  class="hover:text-[#2F5339]">About Us</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:text-[#2F5339]">Help</a>
+              </li>
+              <li class="mb-4">
+                <a href="#"
+                  class="hover:text-[#2F5339]">Location</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:text-[#2F5339]">Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-4 text-xl font-semibold text-white">
+              Catalog
+            </h2>
+            <ul
+              class="text-white font-inter text-md">
+              <li class="mb-4">
+                <a href="#" class="hover:text-[#2F5339]">Blog Writing</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:text-[#2F5339]">Article</a>
+              </li>
+              <li class="mb-4">
+                <a href="#"
+                  class="hover:text-[#2F5339]">E-Book</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-4 text-xl font-semibold text-white">
+              Work Time
+            </h2>
+            <ul
+              class="text-white  font-inter text-md">
+              <li class="mb-4">
+                <a href="#" class="hover:text-[#2F5339]">Mon-Thu
+                  9:00 - 20:00</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:text-[#2F5339]">Fri 9:00-
+                  19:00</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:text-[#2F5339]">Sat 9:00
+                  - 17:00</a>
+              </li>
+    
+            </ul>
+          </div>
+          <div class="col-span-2 col-start-5 ">
+            <h2
+              class="mb-4 text-xl font-semibold text-white">
+              Subscribe Our Newsletters
+            </h2>
+            <div class="relative w-full flex md:w-[320px] ">
+              <input type="email" id="currency-input"
+                class="flex p-2.5 w-full z-20 ps-10 text-sm placeholder:text-left placeholder:text-white text-white  border border-white  focus:ring-white  focus:outline-none focus:border-[#2F5339] dark:focus:border-[#2F5339] bg-[#2F5339]"
+                placeholder="Your Email">
+              <button
+                class="flex-shrink-0 z-10 inline-flex items-center px-4 text-md font-medium text-center text-[#2F5339] bg-white border border-white rounded-0  focus:ring-0 focus:outline-none dark:focus:ring-gray-700"
+                type="button">
+                Subscribe
+              </button>
+            </div>
+            <div class="relative w-full flex md:w-[320px] mt-4">
+              <ul class="flex gap-4">
+                <li
+                  class="mb-4 border rounded-full p-1 bg-white">
+                  <a href="#" class="hover:text-[#2F5339]">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16" viewBox="0 0 16 16" fill="none">
+                      <g clip-path="url(#clip0_1630_814)">
+                        <path
+                          d="M9.07934 15.9688H6.51207C6.08325 15.9688 5.73443 15.6206 5.73443 15.1926V9.41333H4.23663C3.80781 9.41333 3.45898 9.06506 3.45898 8.63721V6.16077C3.45898 5.73279 3.80781 5.38464 4.23663 5.38464H5.73443V4.14453C5.73443 2.91492 6.12129 1.86877 6.85307 1.11938C7.58814 0.366577 8.61542 -0.03125 9.82383 -0.03125L11.7818 -0.0280762C12.2098 -0.0273437 12.5581 0.320801 12.5581 0.748047V3.04736C12.5581 3.47534 12.2094 3.82349 11.7807 3.82349L10.4624 3.82398C10.0604 3.82398 9.95801 3.90442 9.93611 3.92908C9.90003 3.96997 9.8571 4.08557 9.8571 4.40479V5.38452H11.6816C11.8189 5.38452 11.952 5.41834 12.0664 5.48206C12.3131 5.61963 12.4664 5.87976 12.4664 6.16089L12.4655 8.63733C12.4655 9.06506 12.1166 9.41321 11.6878 9.41321H9.8571V15.1926C9.8571 15.6206 9.50815 15.9688 9.07934 15.9688ZM6.67425 15.0308H8.91716V8.99341C8.91716 8.70764 9.15016 8.47522 9.43636 8.47522H11.5256L11.5265 6.32263H9.43624C9.15003 6.32263 8.91716 6.09021 8.91716 5.80444V4.40479C8.91716 4.03833 8.95446 3.62158 9.23161 3.30835C9.5665 2.92969 10.0943 2.88599 10.4622 2.88599L11.6182 2.8855V0.909668L9.8231 0.906738C7.88107 0.906738 6.67425 2.14746 6.67425 4.14453V5.80444C6.67425 6.09009 6.44137 6.32263 6.15517 6.32263H4.39881V8.47522H6.15517C6.44137 8.47522 6.67425 8.70764 6.67425 8.99341V15.0308ZM11.7799 0.909912H11.78H11.7799Z"
+                          fill="#2F5339" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_1630_814">
+                          <rect width="16" height="16"
+                            fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li
+                  class="mb-4 border rounded-full p-1 bg-white">
+                  <a href="#" class="hover:text-[#2F5339]">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16" viewBox="0 0 16 16" fill="none">
+                      <g clip-path="url(#clip0_1630_817)">
+                        <path
+                          d="M11.6689 0H4.33105C1.94287 0 0 1.94287 0 4.33105V11.669C0 14.0571 1.94287 16 4.33105 16H11.669C14.0571 16 16 14.0571 16 11.669V4.33105C16 1.94287 14.0571 0 11.6689 0V0ZM15.062 11.669C15.062 13.5399 13.5399 15.062 11.6689 15.062H4.33105C2.46008 15.062 0.937986 13.5399 0.937986 11.669V4.33105C0.937986 2.46008 2.46008 0.937986 4.33105 0.937986H11.669C13.5399 0.937986 15.062 2.46008 15.062 4.33105V11.669Z"
+                          fill="#2F5339" />
+                        <path
+                          d="M7.99987 3.625C5.58752 3.625 3.625 5.58752 3.625 7.99987C3.625 10.4122 5.58752 12.3747 7.99987 12.3747C10.4122 12.3747 12.3747 10.4122 12.3747 7.99987C12.3747 5.58752 10.4122 3.625 7.99987 3.625ZM7.99987 11.4368C6.10485 11.4368 4.56299 9.89501 4.56299 7.99987C4.56299 6.10485 6.10485 4.56299 7.99987 4.56299C9.89501 4.56299 11.4368 6.10485 11.4368 7.99987C11.4368 9.89501 9.89501 11.4368 7.99987 11.4368Z"
+                          fill="#2F5339" />
+                        <path
+                          d="M12.4802 2.07129C11.7673 2.07129 11.1875 2.65124 11.1875 3.36401C11.1875 4.0769 11.7673 4.65686 12.4802 4.65686C13.1931 4.65686 13.7731 4.0769 13.7731 3.36401C13.7731 2.65112 13.1931 2.07129 12.4802 2.07129ZM12.4802 3.71875C12.2847 3.71875 12.1255 3.55957 12.1255 3.36401C12.1255 3.16833 12.2847 3.00928 12.4802 3.00928C12.6759 3.00928 12.8351 3.16833 12.8351 3.36401C12.8351 3.55957 12.6759 3.71875 12.4802 3.71875Z"
+                          fill="#2F5339" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_1630_817">
+                          <rect width="16" height="16"
+                            fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li
+                  class="mb-4 border rounded-full p-1 bg-white">
+                  <a href="#" class="hover:text-[#2F5339]">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16" viewBox="0 0 16 16" fill="none">
+                      <g clip-path="url(#clip0_1630_823)">
+                        <path
+                          d="M4.13623 4.73828H1.43896C1.1366 4.73828 0.890625 4.98425 0.890625 5.28662V15.4518C0.890625 15.754 1.1366 16 1.43896 16H4.13623C4.43848 16 4.68445 15.754 4.68445 15.4518V5.28662C4.68445 4.98425 4.43848 4.73828 4.13623 4.73828ZM3.74561 15.0611H1.82947V5.67712H3.74561V15.0611Z"
+                          fill="#2F5339" />
+                        <path
+                          d="M2.7876 0C1.73291 0 0.875 0.857909 0.875 1.91247C0.875 2.96716 1.73291 3.82507 2.7876 3.82507C3.84204 3.82507 4.70007 2.96716 4.70007 1.91247C4.70007 0.857909 3.84216 0 2.7876 0ZM2.7876 2.88622C2.25061 2.88622 1.81384 2.44946 1.81384 1.91247C1.81384 1.37561 2.25061 0.938841 2.7876 0.938841C3.32446 0.938841 3.76123 1.37561 3.76123 1.91247C3.76123 2.44934 3.32446 2.88622 2.7876 2.88622Z"
+                          fill="#2F5339" />
+                        <path
+                          d="M13.408 5.92993C12.7632 5.39172 11.9435 5.10388 11.1007 5.11951C10.5773 5.12915 10.0658 5.25537 9.60229 5.48389V5.26196C9.60229 4.97278 9.3678 4.73828 9.07861 4.73828H6.33228C6.04309 4.73828 5.80859 4.97278 5.80859 5.26196V15.4762C5.80859 15.7655 6.04309 15.9999 6.33228 15.9999H9.13281C9.39209 15.9999 9.60229 15.7897 9.60229 15.5305V9.44054C9.60229 8.91918 10.0103 8.47802 10.5312 8.46252C11.0728 8.44653 11.5183 8.88219 11.5183 9.42016V15.5403C11.5183 15.794 11.7241 15.9999 11.9779 15.9999H14.6694C14.9232 15.9999 15.129 15.794 15.129 15.5403V9.60631C15.129 8.18298 14.5017 6.84289 13.408 5.92993ZM14.1902 15.061H12.4573V9.42016C12.4573 8.37426 11.6063 7.52331 10.5603 7.52331C9.5144 7.52331 8.66345 8.37426 8.66345 9.42016V15.061H6.74744V5.677H8.66345V6.35925H8.66406C8.66394 6.46985 8.70239 6.58093 8.78149 6.67041C8.95325 6.8645 9.25 6.88256 9.44409 6.71069C9.90662 6.30127 10.5011 6.06958 11.118 6.0581C11.7356 6.04638 12.335 6.25708 12.8064 6.65063C13.6859 7.38476 14.1902 8.46203 14.1902 9.60631V15.061Z"
+                          fill="#2F5339" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_1630_823">
+                          <rect width="16" height="16"
+                            fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+    
+            </div>
+          </div>
+        </div>
+      </section>
+    </Footer>
+</body>
+ <!-- Flowbite Script -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</html>
